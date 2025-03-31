@@ -1,15 +1,19 @@
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
-import Link from "next/link";
+import CardList from '@/components/cardList/CardList';
+import styles from './homepage.module.css'
+import CategoryList from "@/components/categoryList/CategoryList";
+import Featured from "@/components/featured/Featured";
+import Menu from '@/components/menu/Menu';
 
 export default function Home() {
 
     return (
         <div>
             
-            <div className="flex flex-col items-center justify-center min-h-screen">
-                <h1 className="text-6xl font-bold">Welcome to the Home Page</h1>
-                <Link href={"/"}>Hello</Link>
+            <Featured/>
+            <CategoryList/>
+            <div className={styles.container}>
+                <CardList/>
+                <Menu/>
             </div>
             
         </div>
