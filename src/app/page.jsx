@@ -7,11 +7,11 @@ import Menu from '@/components/menu/Menu';
 export default function Home() {
 
     return (
-        <div>
+        <div className={styles.container}>
             
             <Featured/>
             <CategoryList/>
-            <div className={styles.container}>
+            <div className={styles.content}>
                 <CardList/>
                 <Menu/>
             </div>
