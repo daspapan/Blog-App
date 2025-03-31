@@ -1,12 +1,14 @@
 {
-  "name": "my-app",
+  "name": "Blog-App",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "git:clear": "git rm -r --cached .",
+    "git:push": "git add . && git commit -m 'git push after clear' && git push"
   },
   "dependencies": {
     "react": "^18",
